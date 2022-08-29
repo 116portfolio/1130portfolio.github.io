@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    color: 	#555555;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-image: linear-gradient(19deg, #f0aca8 13%, #DDD6F3 100%);
+;
+    ;
+  }
+
+h1{
+  margin: 0px;
+  padding: 30px;
+}
+
+  .wrap {
+    display: flex;
+    align-items: center;
+    height: 500px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .slideshow {
+    margin:0;
+    padding:0;
+    display: flex;
+    box-sizing: border-box;
+    animation: loop-slide 60s infinite linear 1s both;
+  }
+  .slideshow li {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  @keyframes loop-slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+
+
+.timeline {
+    width: 96%;
+    max-width: 960px;
+    margin: 28px auto;
+    background-color: rgba(255,255,255,0.5);
+    
+}
+
+.timeline-list {
+    padding: 40px 0;
+}
+
+.timeline-list-item {
+    display: flex;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.timeline-list-item .date {
+    width: 20%;
+    padding: 0 0 0 20px;
+    color: #888888;
+    font-weight: bold;
+}
+
+.timeline-list-item .content {
+    position: relative;
+    width: 80%;
+    padding: 0 20px 60px 30px;
+    border-left: 1px solid #aaaaaa;
+}
+
+.timeline-list-item .content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px; /*widthの半分の値を指定*/
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.other{
+  margin-top: 180px;
+}
+
+.other-tittle{
+  width: 205px;
+    margin: 0px auto 20px;
+    text-align: center;
+}
+
+.layout{
+    display:flex;
+    justify-content:space-around;
+}
+
+
+
+.layout2{
+    display: flex;
+    justify-content:space-around;
+}
+
+.layout3{
+    display: flex;
+    justify-content:space-around;
+}
+
+.gallery p {
+    /* 水平方向の中央揃え */
+    text-align: center;
+  }
+
+  .gallery2 p {
+    /* 水平方向の中央揃え */
+    text-align: center;
+  }
+
+  .gallery3 p {
+    /* 水平方向の中央揃え */
+    text-align: center;
+  }

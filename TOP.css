@@ -1,0 +1,415 @@
+@charset "utf-8";
+
+/*全体*/
+body {
+    margin: 0;
+    padding: 0;
+    color: #555555;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #f0aca8;
+    background-image: linear-gradient(19deg, #f0aca8 13%, #DDD6F3 100%);
+}
+
+a{
+  color: #555555;
+}
+
+/*header*/
+header {
+    width: 100%;
+    height: 100px;
+    background: #FFE4E1;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    display: flex; /* flexboxを作る */
+    align-items: center; /* 上下中央に揃える */
+    justify-content: space-between; /* 両端に配置 */
+    position: fixed;
+    top: 0;
+    z-index:2 /*TODO 08/22追加*/
+}
+
+/*header内タイトル*/
+h1 a {
+  color: #555555;
+  font-size: 30px;
+  text-decoration: none;
+  position: absolute;
+  left: 10%;
+  top: 40%;
+}
+
+/*header内メニュー*/
+ul {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  left: 70%;
+}
+
+ul li a {
+  padding: 10px 15px;
+  color: #666666;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+.nav-inner{
+  padding: 10px 10px 0 10px;
+}
+
+#map{
+  background-size: 20px 20px;
+  background-image: repeating-linear-gradient(45deg, #ffecf3 0, #f9cddd 2px, #ffe8f5 0, #ffeded 50%);
+  padding: 100px 0;
+}
+
+/*参戦MAP*/
+h2 {
+  position: relative;
+  display: inline-block;
+  padding: 0 50px;
+  margin-top: 300px;
+}
+
+h2:before, h2:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 45px;
+  height: 2px;
+  border-top: solid 1px #666666;
+  border-bottom: solid 1px #666666;
+}
+
+h2:before {
+  left:0;
+}
+
+h2:after {
+  right: 20;
+}
+
+.otakatsu h2{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.oshiguru h2{
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.map-title{
+  width: 205px;
+    margin: 0px auto 20px;
+    text-align: center;
+}
+
+.map-title h2{
+  margin:0;
+}
+
+.japan{
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.dot{
+  position: absolute;
+  cursor: pointer;
+
+}
+.osaka{
+  color:#C184FF;
+  top: 378px;
+  left: 418px;
+}
+
+.hokkaido{
+  color:#7F7FFF;
+  top: 124px;
+  left: 590px;
+}
+
+.miyagi{
+  color:		#FFD700;
+  top: 276px;
+  left: 576px;
+}
+
+.wakayama{
+  color:#FFCE9E;
+  top: 403px;
+  left: 410px;
+}
+
+.nagoya{
+  color:#32EEFF;
+  top: 367px;
+  left: 464px;
+}
+
+.shizuoka{
+  color:#FF9ECE;
+  top: 379px;
+  left: 490px;
+}
+
+.fukuoka{
+  color:#FF8484;
+  top: 418px;
+  left: 264px;
+}
+
+.tokyo{
+  color:#00EE00;
+  top: 353px;
+  left: 546px;
+}
+
+.kumamoto{
+  color:darkcyan;
+  top: 442px;
+  left: 278px;
+}
+
+.chiba{
+  color:orange;
+  top: 351px;
+  left: 568px;
+}
+
+.saitama{
+  color:#7FBFFF;
+  top: 341px;
+  left: 547px;
+}
+
+.model-tittle{
+  font-size: 30pt;
+}
+
+.model-subtittle{
+  font-size: 18pt;
+}
+
+
+
+.taiwan{
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+ 
+}
+
+.taipei{
+ color:#00CED1;
+  top: 79px;
+  left: 573px;
+}
+
+.map-modal{
+  display: none;
+  position: absolute;
+  top:20px;
+  left:30px;
+  background: 	#EEEEEE;
+  width: 400px;
+  z-index: 1;
+  box-sizing: border-box;
+  padding:20px;
+}
+
+.modal-close{
+  cursor: pointer;
+}
+
+
+/*わたしのヲタ活について*/
+.otareki-wrap { 
+  position: relative;
+}
+
+.otakatsu {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: url(images/castle.JPG) no-repeat 50% 50% / cover;
+  position: relative;
+}
+  /*
+.otakatsu-text{
+  position: absolute;
+  top: 200px;
+  left: 330px;
+}*/
+
+.otakatsu-inner{
+  display: flex;
+  margin: 0 auto;
+  width: 911px;
+  justify-content: space-between;
+  background: rgba(255,255,255,0.8);
+  padding: 60px;
+}
+
+.otakatsu-title{
+  display: inline-block;
+  text-align: center;
+}
+
+.otakatsu-unit1 {
+  width: 485px;
+}
+
+.otakatsu-view{
+  text-align: right;
+  margin-top: 80px;
+}
+.otareki-unit2{
+  max-width: 270px;
+
+}
+
+.otareki-unit2 img{
+  width: 100%;
+  height: auto;
+}
+
+.otakatsu-unit1 .english1 p{
+  margin-top:10px;
+  margin-bottom: 40px;
+  font-size: 25px;
+}
+
+
+
+.otareki-img { 
+  position: absolute; 
+  top: 10px; /*画像表示位置*/
+  left: 55%;
+  width: 600px; /*画像サイズ(横幅) (画像の高さは元画像の比率で自動的に変わる)*/
+}
+
+.otareki-view-more{
+  padding-top: 470px;
+  padding-left: 35%
+}
+
+.english3{
+  font-size: 30px;
+  font-family: 'Caveat', cursive;
+}
+
+.english1{
+  font-size: 30px;
+  font-family: 'Caveat', cursive;
+}
+
+.english2{
+  font-size: 30px;
+  font-family: 'Caveat', cursive;
+  margin:0;
+}
+
+/*わたしの推しグループについて*/
+
+.oshiguru {
+  width: 100%;
+  background: url(images/flower.JPG) no-repeat 50% 50% / cover;
+  padding: 60px 0;
+  position: relative;
+}
+.oshiguru-inner{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 911px;
+  justify-content: space-between;
+  background: rgba(255,255,255,0.8);
+  padding: 60px;
+}
+
+.oshiguru-title{
+  display: inline-block;
+  text-align: center;
+}
+
+.oshiguru-unit1 .english2 p{
+  margin:0;
+  font-size: 25px;
+}
+
+.oshiguru-unit1 {
+  width: 500px;
+}
+
+.oshiguru-unit2{
+  max-width: 400px;
+}
+
+.oshiguru-text{
+  margin-top:50px;
+}
+
+.oshiguru-view{
+  text-align: right;
+  margin-top: 50px;
+}
+
+.twitter-wrap{
+  position: relative;
+}
+/*
+.twitter-tweet{
+  position: absolute;
+  left: 50%;
+}
+*/
+.twitter-view-more{
+  padding-top: 740px;
+  padding-left: 43%;
+  padding-top: 100px;
+}
+
+.twitter-tweet.twitter-tweet-rendered{
+  width: 300px!important;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  left: 0;
+}
+
+.mainvisual{
+  position: relative;
+}
+
+
+.mainvisual-text{
+  position: absolute;
+  left: 100px;
+  top:100px;
+  font-size: 20px;
+  color: #FDF5E6;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+.otareki-unit2{
+  max-width: 270px;
+
+}
+
+.otareki-unit2 img{
+  width: 100%;
+  height: auto;
+}

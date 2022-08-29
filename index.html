@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="TOP.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+        <title>ヲタ活日記</title>
+    </head>
+
+     <body>
+        <header>
+            <h1><a href="index.html">とあるヲタクの記録</a></h1>
+            <nav id="top-nav">
+              <ul>
+                 <li><a href="#map">MAP</a></li>
+                 <li><a href="otareki_page/otareki.html">ヲタ活</a></li>
+                 <li><a href="jump_page/jump.html">推しグループ</a></li>
+             </ul>
+             </nav>
+        </header>
+
+        <h1>とあるヲタクの記録</h1>
+
+        <div class="mainvisual">
+            <img src="images/fab_top.JPG" alt="団扇裏_fab" width="100%" height="800px"> 
+            <div class="mainvisual-text">
+                <b><p>気づけば歴10年越えヲタクの日記へようこそ!</p></b>
+                <b><p>過去に参戦した会場のことなど紹介します♪</p</b>
+            </div>
+        </div>
+
+        <div id="map">
+
+            <div class="map-title">
+                <h2>参戦MAP</h2>
+                <div class="english3 venue"><p>concert venue</p></div>
+            </div>
+
+        <div class="japan">
+            <div class="dot osaka" onclick="openModal('osaka')">●</div>
+            <div class="dot hokkaido" onclick="openModal('hokkaido')">●</div>
+            <div class="dot miyagi" onclick="openModal('miyagi')">●</div>
+            <div class="dot wakayama" onclick="openModal('wakayama')">●</div>
+            <div class="dot nagoya" onclick="openModal('nagoya')">●</div>
+            <div class="dot shizuoka" onclick="openModal('shizuoka')">●</div>
+            <div class="dot fukuoka" onclick="openModal('fukuoka')">●</div>
+            <div class="dot tokyo" onclick="openModal('tokyo')">●</div>
+            <div class="dot kumamoto" onclick="openModal('kumamoto')">●</div>
+            <div class="dot chiba" onclick="openModal('chiba')">●</div>
+            <div class="dot saitama" onclick="openModal('saitama')">●</div>
+
+            <div class="map-modal osaka" data-modal="osaka">
+                <div class="model-tittle">
+                    <p>大阪</p>
+                 </div>
+                <div class="model-subtittle">
+                    <p>◎京セラドーム大阪</p>
+                </div>
+                <p>嵐のワクワク学校2015</p>
+                <p>JUMPing CARnival Count Down(2015-2016)</p>
+                <p>I/Oth Anniversary Tour 2017-2018</p>
+                <p>SENSE or LOVE(2018)</p>
+                <p>嵐のワクワク学校2019</p>
+                <p>PARADE(2019)</p>
+                <div class="model-subtittle">
+                 <p>◎大阪城ホール</p>
+                </div>
+                <p>JUMPing CARnival(2015)</p>
+                <p>DEAR.(2016)</p>
+                <p>I/Oth Anniversary Tour 2017</p>
+                <a class="modal-close" onclick="closenModal()">閉じる</a>
+            </div>
+
+            <div class="map-modal hokkaido" data-modal="hokkaido">
+                <div class="model-tittle">
+                <p>北海道</p>
+                </div>
+                <div class="model-subtittle">
+                <p>◎北海きたえーる<p>
+                </div>
+                <p>!d𐑇ᖷ-Arena speaks.-　→中止</p>
+                <a class="modal-close" onclick="closenModal()">閉じる</a>
+            </div>
+
+            <div class="map-modal miyagi" data-modal="miyagi">
+                <div class="model-tittle">
+                    <p>宮城</p>
+                </div>
+                <div class="model-subtittle">
+                    <p>◎セキスイハイムスーパーアリーナ</p>
+                </div>
+                <p>SENSE or LOVE(2018)</p>
+                <p>!d𐑇ᖷ-Arena speaks.- (2022)</p>
+                <p>FILMUSIC!(2022) →予定</p>
+                <a class="modal-close" onclick="closenModal()">閉じる</a>
+            </div>
+
+            <div class="map-modal wakayama" data-modal="wakayama">
+                <div class="model-tittle">
+                <p>和歌山</p>
+                </div>
+                <div class="model-subtittle">
+                 <p>◎和歌山ビッグホエール</p>
+                </div>
+                <p>FILMUSIC!(2022) →予定</p>
+                <a class="modal-close" onclick="closenModal()">閉じる</a>
+            </div>
+
+            <div class="map-modal nagoya" data-modal="nagoya">
+                <div class="model-tittle">
+                <p>愛知</p>
+                </div>
+                <div class="model-subtittle">
+                 <p>◎ナゴヤドーム（現：バンテリンドーム　ナゴヤ）</p>
+                </div>
+                <p>SENSE or LOVE(2018)</p>
+                <p>PARADE(2019)</p>
+                <a class="modal-close" onclick="closenModal()">閉じる</a>
+            </div>
+
+            <div class="map-modal shizuoka" data-modal="shizuoka">
+                <div class="model-tittle">
+                    <p>静岡</p>
+                </div>
+                <div class="model-subtittle">
+                 <p>◎エコパアリーナ</p>
+                </div>
+                <p>I/Oth Anniversary Tour 2017</p>
+                <p>FILMUSIC!(2022) →予定</p>
+                <a class="modal-close" onclick="closenModal()">閉じる</a>
+            </div>
+
+            <div class="map-modal fukuoka" data-modal="fukuoka">
+                <div class="model-tittle">
+                    <p>福岡</p>
+                </div>
+                <div class="model-subtittle">
+                 <p>◎ヤフオク！ドーム（現：福岡PayPayドーム）</p>
+                </div>
+                <p>SENSE or LOVE(2019)</p>
+                <p>PARADE(2020)</p>
+                <a class="modal-close" onclick="closenModal()">閉じる</a>
+            </div>
+
+            <div class="map-modal tokyo" data-modal="tokyo">
+                <div class="model-tittle">
+                <p>東京</p>
+                </div>
+                <div class="model-subtittle">
+                 <p>◎東京ドーム</p>
+                </div>
+                <p>DEAR.(2016-2017)</p>
+                <p>SENSE or LOVE(2018-2019)</p>
+                <p>PARADE(2019-2020)</p>
+                <p>ジャニーズカウントダウン 2019-2020</p>
+                <div class="model-subtittle">
+                 <p>◎武蔵野の森 総合スポーツプラザ メインアリーナ</p>
+                </div>
+                <p>SENSE or LOVE(2018)</p>
+                <a class="modal-close" onclick="closenModal()">閉じる</a>
+            </div>
+
+            <div class="map-modal kumamoto" data-modal="kumamoto">
+                <div class="model-tittle">
+                <p>熊本</p>
+                </div>
+                <div class="model-subtittle">
+                 <p>◎グランメッセ熊本</p>
+                </div>
+                <p>FILMUSIC!(2022) →予定</p>
+                <a class="modal-close" onclick="closenModal()">閉じる</a>
+            </div>
+
+            <div class="map-modal chiba" data-modal="chiba">
+                <div class="model-tittle">
+                <p>千葉</p>
+                </div>
+                <div class="model-subtittle">
+                 <p>◎幕張メッセ国際展示場1・2・3ホール</p>
+                </div>
+                <p>!d𐑇ᖷ-Arena speaks.- (2021)</p>
+                <a class="modal-close" onclick="closenModal()">閉じる</a>
+            </div>
+
+            <div class="map-modal saitama" data-modal="saitama">
+                <div class="model-tittle">
+                 <p>埼玉</p>
+                </div>
+                <div class="model-subtittle">
+                 <p>◎さいたまスーパーアリーナ</p>
+                </div>
+                <p>!d𐑇ᖷ-Arena speaks.-　→中止</p>
+                <a class="modal-close" onclick="closenModal()">閉じる</a>
+            </div>
+
+
+            <img src="images/japan.jpeg" width="1000" height="572" alt="nippon map"/>
+        </div>
+
+        <div class="taiwan">
+            <div class="dot taipei" onclick="openModal('taipei')">●</div>
+
+            <div class="map-modal taipei" data-modal="taipei">
+                <div class="model-tittle">
+                <p>台北</p>
+                </div>
+                <div class="model-subtittle">
+                 <p>◎台北アリーナ</p>
+                </div>
+                <p>Hey!Say!JUMP LIVE 2019 in Taipei</p>
+                <a class="modal-close" onclick="closenModal()">閉じる</a>
+            </div>
+
+          <img src="images/taiwan.jpeg" width="1000" height="572" alt="taiwan map"/></div>
+        </div>
+    </div>
+        <div class="otakatsu">
+            <div class="otakatsu-inner">
+            <div class="otakatsu-unit1">
+                <div class="otakatsu-title">
+                    <h2>わたしのヲタ活について</h2>
+                    <div class="english1 activities"><p>otaku activities</p></div>
+                </div>
+                
+                <div class="otakatsu-text">
+                 <p>小学5年生の冬に出会い一途に応援してきました。</p>
+                 <p>いつでも　どこでも　知念くん。</p>
+                 <p>推しを中心に生きている</p>
+                 <p>少し重めなヲタクの出来事をちょこっとお見せします。</p>
+                </div>
+                <div class="otakatsu-view">
+                    <a href="otareki_page/otareki.html">view more</a>
+                </div>
+            </div>
+            
+            <div class="otareki-unit2">
+                <img src="images/parede_pink.PNG" alt="otareki-img" class="">
+            </div>
+        </div>
+        </div>
+
+
+        <div class="oshiguru">
+            <div class="oshiguru-inner">
+            <div class="oshiguru-unit1">
+                <div class="oshiguru-title">
+                    <h2>わたしの推しグループについて</h2>
+                    <div class="english2 fave-group"><p>my fave group</p></div>
+                </div>
+                
+                <div class="oshiguru-text">
+                    <p>2007年にデビューをした彼ら。</p>
+                    <p>様々な困難に立ち向かい、今ではジャニーズの中でも中堅の立場へ。</p>
+                    <p>デビュー当時、平均年齢15歳だった8人は今年15周年を迎える。</p>
+                </div>
+                <div class="oshiguru-view">
+                    <a href="jump_page/jump.html">view more</a>
+                </div>
+            </div>
+
+            
+        
+            <div class="oshiguru-unit2">
+
+                <blockquote class="twitter-tweet">
+                    <p lang="en" dir="ltr">Just in time for your weekend party jams, <a href="https://twitter.com/hashtag/HeySayJUMP?src=hash&amp;ref_src=twsrc%5Etfw">#HeySayJUMP</a> brings you their official stage mix of hit funky disco track <a href="https://twitter.com/hashtag/Weekender?src=hash&amp;ref_src=twsrc%5Etfw">#Weekender</a>, now available on YouTube! <br><br>🎵Stream it here!<a href="https://t.co/lw06Peh9yG">https://t.co/lw06Peh9yG</a><a href="https://twitter.com/hashtag/YourJohnnysMusic?src=hash&amp;ref_src=twsrc%5Etfw">#YourJohnnysMusic</a> <br><br>Follow <a href="https://twitter.com/wolpuu_official?ref_src=twsrc%5Etfw">@wolpuu_official</a> for more! <a href="https://t.co/Vp7ntZLtiX">pic.twitter.com/Vp7ntZLtiX</a></p>
+                    &mdash; Johnny &amp; Associates (@johnnys) <a href="https://twitter.com/johnnys/status/1553138298477879296?ref_src=twsrc%5Etfw">July 29, 2022</a>
+                </blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+        </div>
+      
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="top.js"></script>
+    </body>
+</html>
