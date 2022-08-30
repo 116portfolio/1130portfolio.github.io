@@ -25,7 +25,7 @@ h1{
 .oshiguru{
     display: flex;
     justify-content: space-between;
-    max-width: 1400px;
+    width: 1400px;
     margin:0 auto;
 }
 
@@ -48,7 +48,7 @@ h1{
 
 .keireki-text{
     width: 55%;
-    word-break: keep-all;
+    word-break: break-all;
     padding-top: 170px; 
 }
 .keireki-p{
