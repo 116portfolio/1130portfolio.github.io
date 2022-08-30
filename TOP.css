@@ -153,6 +153,7 @@ h2:after {
   position: relative;
   width: 1000px;
   margin: 0 auto;
+  z-index: 1;
 }
 
 .dot{
@@ -264,6 +265,11 @@ h2:after {
 
 .modal-close{
   cursor: pointer;
+  text-decoration: none;
+}
+
+.modal-close:hover{
+  text-decoration: underline;
 }
 
 
