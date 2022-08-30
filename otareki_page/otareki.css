@@ -11,8 +11,10 @@ body {
   }
 
 h1{
-  margin: 0px;
-  padding: 30px;
+  margin: 70px 82px 50px;
+  padding: 20px 61px;
+  letter-spacing: 10px;
+  border-left: 10px solid #555555;
 }
 
   .wrap {
@@ -69,6 +71,7 @@ h1{
     padding: 0 0 0 20px;
     color: #888888;
     font-weight: bold;
+    font-size: 18px;
 }
 
 .timeline-list-item .content {
