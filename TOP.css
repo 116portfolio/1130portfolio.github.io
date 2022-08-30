@@ -38,6 +38,7 @@ h1 a {
   position: absolute;
   left: 10%;
   top: 40%;
+  letter-spacing: 10px;
 }
 
 /*header内メニュー*/
@@ -49,19 +50,51 @@ ul {
 }
 
 ul li a {
-  padding: 10px 15px;
+  padding: 0px 15px;
   color: #666666;
   text-decoration: none;
   font-weight: bold;
 }
 
-ul li a:hover {
-  text-decoration: underline;
-}
 
 .nav-inner{
   padding: 10px 10px 0 10px;
 }
+
+a{
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#top-nav a::after {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #666666;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: transform .3s;
+}
+#top-nav a:hover::after {
+  transform: scale(1, 1);
+}
+
+
+
+
+
+#container {
+  position: relative;
+  height: 200px;
+  margin: 20px;
+}
+
+
+
 
 #map{
   background-size: 20px 20px;
@@ -125,71 +158,72 @@ h2:after {
 .dot{
   position: absolute;
   cursor: pointer;
+  font-size: 35px;
 
 }
 .osaka{
   color:#C184FF;
-  top: 378px;
-  left: 418px;
+  top: 368px;
+  left: 415px;
 }
 
 .hokkaido{
   color:#7F7FFF;
-  top: 124px;
+  top: 105px;
   left: 590px;
 }
 
 .miyagi{
   color:		#FFD700;
-  top: 276px;
-  left: 576px;
+  top: 257px;
+  left: 567px;
 }
 
 .wakayama{
   color:#FFCE9E;
-  top: 403px;
-  left: 410px;
+  top: 390px;
+  left: 403px;
 }
 
 .nagoya{
   color:#32EEFF;
-  top: 367px;
+  top: 356px;
   left: 464px;
 }
 
 .shizuoka{
   color:#FF9ECE;
-  top: 379px;
+  top: 361px;
   left: 490px;
 }
 
 .fukuoka{
   color:#FF8484;
-  top: 418px;
+  top: 401px;
   left: 264px;
 }
 
 .tokyo{
   color:#00EE00;
-  top: 353px;
-  left: 546px;
+  top: 345px;
+  left: 542px;
 }
 
 .kumamoto{
   color:darkcyan;
   top: 442px;
-  left: 278px;
+  left: 266px;
 }
 
 .chiba{
   color:orange;
-  top: 351px;
-  left: 568px;
+  top: 339px;
+  left: 564px;
 }
 
 .saitama{
   color:#7FBFFF;
-  top: 341px;
+  top: 321px;
   left: 547px;
 }
 
@@ -212,7 +246,7 @@ h2:after {
 
 .taipei{
  color:#00CED1;
-  top: 79px;
+  top: 66px;
   left: 573px;
 }
 
@@ -275,6 +309,32 @@ h2:after {
   text-align: right;
   margin-top: 80px;
 }
+
+.otakatsu-view a{
+  color: #707070;
+  position: relative;
+  text-decoration: none;
+}
+
+.otakatsu-view a:before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 1px;
+  background: #555;
+  transform: scale(0, 1);
+  transform-origin: left;
+  transition: 0.5s;
+}
+.otakatsu-view a:hover {
+  color: #101010;
+}
+.otakatsu-view a:hover:before {
+  transform: scale(1);
+}
+
 .otareki-unit2{
   max-width: 270px;
 
@@ -364,17 +424,42 @@ h2:after {
 .oshiguru-view{
   text-align: right;
   margin-top: 50px;
+  color: #707070;
+  position: relative;
+  text-decoration: none;
 }
+
+.oshiguru-view a{
+  color: #707070;
+  position: relative;
+  text-decoration: none;
+}
+
+
+.oshiguru-view a:before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 1px;
+  background: #555;
+  transform: scale(0, 1);
+  transform-origin: left;
+  transition: 0.5s;
+}
+.oshiguru-view a:hover {
+  color: #101010;
+}
+.oshiguru-view a:hover:before {
+  transform: scale(1);
+}
+transform-origin: left;
 
 .twitter-wrap{
   position: relative;
 }
-/*
-.twitter-tweet{
-  position: absolute;
-  left: 50%;
-}
-*/
+
 .twitter-view-more{
   padding-top: 740px;
   padding-left: 43%;
@@ -396,11 +481,19 @@ h2:after {
 
 .mainvisual-text{
   position: absolute;
-  left: 100px;
-  top:100px;
-  font-size: 20px;
+  left: 72px;
+  top:7px;
   color: #FDF5E6;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+ 
+
+.mainvisual1{
+  font-family: 'Caveat', cursive;
+  font-size: 80px;
+}
+
+.mainvisual2{
+  letter-spacing: 10px;
 }
 
 
